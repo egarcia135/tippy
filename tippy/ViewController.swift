@@ -21,13 +21,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        billField.becomeFirstResponder()
     }
 
 
     @IBAction func onTap(_ sender: Any) {
         print("Hello")
         
-        view.endEditing(true)
+        //view.endEditing(true)
     }
     @IBAction func calcuateTip(_ sender: Any) {
         
@@ -55,18 +56,4 @@ class ViewController: UIViewController {
         }
         
     }
-    
-//    @IBAction func buttonClicked(_ sender: UIButton) {
-//        totalLabel.textColor = UIColor.red
-//        tipLabel.textColor = UIColor.red
-//        billAmountLabel.textColor = UIColor.red
-//        clickHere.setTitle("Clicked", for: .normal)
-//        totalHeadingLabel.textColor = UIColor.red
-//
-//        totalLabel.textColor = UIColor.red
-//        tipLabel.font = UIFont(name: "Arial", size: tipLabel.font.pointSize)
-//        billAmountLabel.textColor = UIColor.red
-//
-//
-//    }
 }
